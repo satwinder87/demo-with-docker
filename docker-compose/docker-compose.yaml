@@ -1,0 +1,6 @@
+version: "3"
+services:
+  demo-with-docker:
+    image: demo-with-docker-v1
+    ports:
+      - 8080:8080
