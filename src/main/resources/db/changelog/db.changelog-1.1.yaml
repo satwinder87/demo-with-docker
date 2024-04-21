@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - preConditions:
+      onFail: HALT
+      onError: HALT
+  - changeSet:
+      id: 1
+      author: 'test'
+      comment: Add new column to customers table
+      changes:
+        - addColumn:
+            tableName: customers
+            columns:
+              - column:
+                  name: address
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false

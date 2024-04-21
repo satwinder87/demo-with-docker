@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - preConditions:
+      onFail: HALT
+      onError: HALT
+  - include:
+      file: db.changelog-1.0.yaml
+      relativeToChangelogFile: true
