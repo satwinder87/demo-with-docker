@@ -1,6 +1,8 @@
 version: "3"
 services:
   demo-with-docker:
+    image: demo-with-docker-v3
+    container_name: demo-with-docker
     build: ../      # path to your Dockerfile
     ports:
       - 8080:8080
